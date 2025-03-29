@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@theme {
+  --color-primary: #00A9FF;
+  --color-secondary: #DFF5FF;
+  --color-background-color: #DFF5FF;
+  --color-background-secondary-color: #bae6fd;
+  --color-light-blue-color: #93c5fd;
+  --radius-radius: 0.5rem;
+}
+
+@layer theme {
+  .dark {
+    --color-background-color: #1f2937;
+    --color-background-secondary-color: #374151;
+  }
+}
+
+:root {
+  --background-color: #DFF5FF;
+  --background-secondary-color: #bae6fd;
+}
+
+.dark {
+  --background-color: #1f2937;
+  --background-secondary-color: #374151;
+}
+
+/*-----------    Scrollbar Style    -----------*/
+
+::-webkit-scrollbar {
+  width: 8px;
+  transition: 1s;
+  background-color: var(--background-color); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-secondary-color);
+  border-radius: 50px;
+}

@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@constants/*": [
+        "constants/*"
+      ],
+      "@store/*": [
+        "store/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@graphql/*": [
+        "graphql/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
+    },
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "strictNullChecks": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+, "app/api/auth/[...nextauth]/route.ts", "app/api/auth/[...nextauth]/route.ts", "app/api/auth/[...nextauth]/route.ts", "app/api/auth/[...nextauth]/route.ts", "utils/options.s"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
